@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "4VyAGN2QjuxLHC3YWWjiq8YpNkzyMcULe9s/9IjPBC4=",
+  "Source": "CarRegistrationApi",
+  "BasePath": "_content/CarRegistrationApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
