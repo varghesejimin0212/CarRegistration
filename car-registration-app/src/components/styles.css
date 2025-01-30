@@ -1,0 +1,93 @@
+.cars-list, .registration-status {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+    font-weight: 600;
+  }
+  
+  tr:hover {
+    background-color: #f8f8f8;
+  }
+  
+  .filter-container {
+    margin: 20px 0;
+  }
+  
+  .filter-input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+    font-size: 14px;
+  }
+  
+  .filter-input:focus {
+    outline: none;
+    border-color: #646cff;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+  }
+  
+  .error {
+    color: #dc2626;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .expired {
+    color: #dc2626;
+    font-weight: 500;
+  }
+  
+  .valid {
+    color: #16a34a;
+    font-weight: 500;
+  }
+  
+  nav {
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+  
+  nav a:hover {
+    background-color: #f4f4f4;
+  }
