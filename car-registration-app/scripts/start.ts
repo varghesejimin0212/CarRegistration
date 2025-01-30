@@ -33,6 +33,8 @@ const startServices = async () => {
     // Wait a bit to ensure ports are released
     await new Promise(resolve => setTimeout(resolve, 1000));
 
+    console.log('\n🚀 Starting services...\n');
+
     // Start backend with explicit profile
     const backend = exec('cd ../CarRegistrationApi && dotnet run --launch-profile https', (error, stdout, stderr) => {
       if (error) {
@@ -45,6 +47,10 @@ const startServices = async () => {
 
     // Wait for backend to start
     await new Promise(resolve => setTimeout(resolve, 5000));
+    console.log('✅ Backend running at:');
+    console.log('   - https://localhost:7214');
+    console.log('   - http://localhost:5168');
+    console.log('   - Swagger UI: https://localhost:7214/swagger\n');
 
     // Start frontend
     const frontend = exec('npm run dev', (error, stdout, stderr) => {
@@ -55,6 +61,9 @@ const startServices = async () => {
       console.log(stdout);
       console.error(stderr);
     });
+
+    console.log('✅ Frontend running at:');
+    console.log('   - http://localhost:5173\n');
 
     // Handle process termination
     process.on('SIGINT', () => {
@@ -67,5 +76,4 @@ const startServices = async () => {
     console.error('Failed to start services:', error);
   }
 };
-
 startServices();
